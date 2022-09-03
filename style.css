@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    height: 100%;
+    width: 100%;
+}#main{
+
+    height: 100%;
+    width: 100%;
+    background-color:rgb(167, 203, 234);
+}
+#cards{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 330px;
+    border-radius: 10px;
+    /* padding: 12px 10px ; */
+    background-color: #fff;
+    border: 2px solid #000;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    /* background-color: red; */
+}
+#message i{
+    font-size: 25px;
+    border-radius: 10px;
+}
+#message{
+    display: flex;
+    gap: 13px;
+}
+#logo img{
+    height:50px ;
+}
+#story{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 5px;
+    height: 83px;
+    width: 100%;
+    /* background-color: red; */
+}
+#story::-webkit-scrollbar{
+    display: none;
+}
+.photoCon{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid black; 
+}.photoCon>img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#content{
+    height: 65%;
+    width: 100%;
+    background-color: aqua;
+}#name{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}#photoName{
+    position: relative;
+    padding: 3px 8px;
+    display: flex;
+   
+    gap: 10px;
+    align-items: center;
+}#photo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: blue;
+}#photoname>i{
+    position: absolute;
+    right: 5px;
+}
